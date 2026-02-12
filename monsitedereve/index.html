@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title><center>Accueil</center></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- je determine la police d'écriture de mon site de rêve-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="ski.html">Ski</a></li>
+      <li><a href="billard.html">Billard</a></li> <!-- j'ai bien eu l'autorisation de mon ami pour sa presence sur la photo utilisée -->
+      <li><a href="running.html">Running</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="lobster-two-bold">Bienvenue dans mon monde</h1>
+    <p>Voici un site présentant mes activités préférées.</p>
+
+    <div class="gallery">
+      <img src="image7.jpg" alt="Photo 1" width="400">
+      <img src="image8.jpg" alt="Photo 2" width="400">
+      <img src="image9.jpg" alt="Photo 3" width="400"> <!--J'ajoute des images pour chaque page-->
+    </div>
+
+    <h2>Musique de fond</h2>
+    <audio id="audio" src="music.mp3"></audio> <!-- la musique marche, il faut attendre un peu-->
+
+    <button onclick="document.getElementById('audio').play()">▶️ Play</button>
+    <button onclick="document.getElementById('audio').pause()">⏸️ Pause</button>
+    <button onclick="document.getElementById('audio').load()">⏹️ Stop</button>
+  </main>
+
+</body>
+</html>

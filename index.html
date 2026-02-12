@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Site de William</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <div id="entete-de-page">
+    <p>Site de William<br></p>
+  </div>
+
+  <table id="bloc-menu" border="1" role="navigation" aria-label="Menu principal">
+    <tr>
+      <th><a href="index.html">Accueil</a></th>
+      <th><a href="productions.html">Productions scolaires</a></th>
+      <th><a href="passions.html">Mes passions</a></th>
+      <th><a href="videos.html">Mes vidéos</a></th>
+      <th><a href="monsitedereve/index.html">Mon site de rêve</a></th>
+    </tr>
+  </table>
+  <br>
+
+  <div class="presentation">
+    <img src="avatar.png" alt="ceci est mon avatar" class="arrondie"> <!-- mon avatar généré par IA -->
+
+    <div class="texte-presentation">
+      <h2>Je suis William Grimonprez</h2>
+      <p>
+        J'ai 15 ans, j'étudie au lycée sacré coeur à Tourcoing
+        et je suis passionné de ski et de running
+        <br> mon film préféré est Seven avec Morgan Freeman et Brad Pitt et mon livre favoris
+        est Hunger Games écrit par Suzanne Collins
+        <br><br> J'ai un profil assez scientique mais je suis ouvert à toutes découvertes ou rencontres !
+      </p> <!-- Je me présente -->
+    </div>
+  </div>
+
+  <!-- on ajoute le lien où se trouve la musique -->
+  <div>
+    <audio id="zic" src="music.mp3"></audio>
+
+    <!-- on nomme les boutons et leur statut -->
+    <div>
+      <a href="javascript:void(0)" onclick="changeState(0)" class="bouton hover">PLAY</a>
+      <a href="javascript:void(0)" onclick="changeState(1)" class="bouton">PAUSE</a>
+      <a href="javascript:void(0)" onclick="changeState(2)" class="bouton active">STOP</a>
+    </div>
+
+    <!-- on écrit les variables du script -->
+    <script>
+      // on attribue valeur et fonction de chaque bouton
+      function changeState(x) {
+        const boutons = document.querySelectorAll(".bouton");
+        const audio = document.querySelector("#zic");
+
+        for (let i = 0; i < boutons.length; i++) {
+          boutons[i].classList.remove("active");
+        }
+        boutons[x].classList.add("active");
+
+        if (x === 0) {
+          audio.play();
+        }
+        if (x === 1) {
+          audio.pause();
+        }
+        if (x === 2) {
+          audio.pause();
+          audio.currentTime = 0;
+        }
+      }
+    </script>
+  </div>
+
+  <hr>
+
+  <div id="infos">
+    <h3>A lire aussi:</h3>
+    <ul>
+      <li><a href="passions.html">Mes passions</a></li>
+      <li><a href="https://www.pokemon.com/fr/pokedex" target="_blank" rel="noopener">Pokédex</a></li> <!-- lien absolu -->
+    </ul>
+  </div>
+  <br>
+
+  <div id="pied-de-page">
+    <p>
+      Projet SNT - Dernière mise à jour : 10/02/2026 <br>
+      Les textes et images utilisés n'engagent que son auteur : William
+    </p>
+  </div>
+  <br>
+</body>
+</html>
+``

@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-color: #EBE8D1;
+    font-family: Lobster Two, sans-serif; /*je modifie la police de mon site*/
+}
+
+nav {
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    padding-top: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #FFFFFF; /*je choisis la couleur*/
+}
+
+nav a:hover {
+    color: #FFFFFF;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.gallery img {
+    margin: 30px;
+    border-radius: 8px; /*Je choisis la taille des images*/
+}
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lobster-two-regular-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lobster-two-bold-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}

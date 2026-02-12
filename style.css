@@ -1,0 +1,135 @@
+iframe {
+  height: 70vh;
+  width: 70%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EBE8D1;
+  font-family: "Roboto Slab", serif; /* ← nom correct */
+  font-size: 20px;
+}
+
+/* Apparence du site + couleur */
+.presentation {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.presentation img {
+  width: 120px; /* plus fiable que % ici */
+  height: auto;
+}
+
+.texte-presentation {
+  flex: 1;
+  color: #2F2F2F;
+}
+
+th {
+  width: 500px;
+}
+
+/* ⚠️ Tu as 2 règles sur <ul>. Choisis l'une :
+   - soit une image comme puce (décommente la ligne ci-dessous),
+   - soit un type de puce (voir plus bas). */
+/* ul { list-style-image: url("puce-zelda.png"); } */
+
+#entete-de-page {
+  padding: 5px;
+  height: 100px;
+  background-color: #3A7BD5;
+  font-size: 32px;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+#bloc-menu {
+  height: 36px;
+  background-color: #7FB3FF;
+  /* float: center;  ← n'existe pas. Si tu veux centrer le tableau :
+     utilise margin: 0 auto; sur l'élément <table> dans le HTML ou ici via un sélecteur plus précis. */
+  color: white;
+}
+
+#contenu {
+  padding: 10px;
+  background-color: #EBE8D1;
+  color: #84A8F0;
+}
+
+#infos {
+  color: #1F3A5F;
+  font-style: italic;
+}
+
+#pied-de-page {
+  padding: 5px;
+  background-color: #7FB3FF;
+  font-size: 11px;
+}
+
+.bouton.active {
+  color: #84A8F0; /* 'Color' -> 'color' */
+}
+
+.bouton {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  color: #84A8F0;
+  font-size: 4rem;
+  line-height: 2em;
+  margin: 0 20px; /* espace entre les boutons */
+}
+
+/* Image avec bords arrondis */
+.arrondie {
+  border-radius: 7px;
+  /* anciens préfixes conservés si tu y tiens :
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px; */
+}
+
+.arrondie1 {
+  border-radius: 100px;
+  /* -moz-border-radius: 100px;
+  -webkit-border-radius: 100px; */
+}
+
+/* Liens généraux */
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #18042E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:active {
+  color: #601EBD;
+  text-decoration: none;
+}
+
+/* Si tu ne veux PAS d'image de puce, active plutôt ce style : */
+ul {
+  list-style-type: square; /* disc | circle | square */
+}
+
+/* 
+Guide : 
+- disc   → rond plein (par défaut)
+- circle → cercle vide
+- square → carré
+*/
