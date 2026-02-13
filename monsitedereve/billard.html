@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Billard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Billard</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Optionnel : rendu responsive 16:9 pour les iframes YouTube */
+    .video-16x9 { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+    .video-16x9 iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    h1 { text-align: center; } /* remplace <center> par du CSS */
+  </style>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="ski.html">Ski</a></li>
-            <li><a href="billard.html">Billard</a></li>
-            <li><a href="running.html">Running</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="ski.html">Ski</a></li>
+      <li><a href="billard.html">Billard</a></li>
+      <li><a href="running.html">Running</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <h1><center>Billard</center></h1>
-        
-		<h2>Photos de mes amis et moi au billard</h2> 
-        <img src="image6.jpg" alt="Ma photo" width="400">
-        <h3>Vidéos de Billard</h3>
+  <main>
+    <h1>Billard</h1>
 
-        <iframe width="560" height="315" src="https://youtu.be/vnLotG-TWP4?si=ZhCiByp6A_WMdceJ" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://youtu.be/T-SQJ9rAqzc?si=DsMRXa-wYd4Kib2G" allowfullscreen></iframe>
+    <h2>Photos de mes amis et moi au billard</h2>
+    <img src="image6.jpg" alt="Ma photo" width="400">
 
-    </main>
+    <h3>Vidéos de Billard</h3>
+
+    <!-- Remplacement de youtu.be par le format embed -->
+    <div class="video-16x9">
+      <iframe
+        src="https://www.youtube.com/embed/vnLotG-TWP4"
+        title="Vidéo YouTube 1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="video-16x9" style="margin-top:16px;">
+      <iframe
+        src="https://www.youtube.com/embed/T-SQJ9rAqzc"
+        title="Vidéo YouTube 2"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </main>
 
 </body>
 </html>
