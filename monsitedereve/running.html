@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Running</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Running</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Optionnel : rendu responsive 16:9 pour l’iframe YouTube */
+    .video-16x9 { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+    .video-16x9 iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    h1 { text-align: center; }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="ski.html">Ski</a></li>
-            <li><a href="billard.html">Billard</a></li>
-            <li><a href="running.html">Running</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="ski.html">Ski</a></li>
+      <li><a href="billard.html">Billard</a></li>
+      <li><a href="running.html">Running</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <h1><center>Running</center></h1>
+  <main>
+    <h1>Running</h1>
 
-        <div class="gallery">
-            <img src="image.jpg" alt="Ma photo" width="400">
-            <img src="image2.jpg" alt="Ma photo" width="400">
-        </div>
+    <div class="gallery">
+      <img src="image.jpg" alt="Ma photo" width="400">
+      <img src="image2.jpg" alt="Ma photo" width="400">
+    </div>
 
-        <h2>Vidéos Running</h2>
+    <h2>Vidéos Running</h2>
 
-        <iframe width="560" height="315" src="https://youtu.be/YSiYewXvlzU?si=rZWpqGHBGoh82uKe" allowfullscreen></iframe>
-
-    </main>
+    <div class="video-16x9">
+      <iframe
+        src="https://www.youtube.com/embed/YSiYewXvlzU"
+        title="Vidéo Running"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </main>
 
 </body>
 </html>
